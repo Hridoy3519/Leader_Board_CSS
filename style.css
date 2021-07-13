@@ -19,7 +19,43 @@ main{
 }
 
 /* Navigation Bar */
+nav{
+    background-color: #562EFF;
+}
 
+.navigation{
+    width: 930px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#logo-name{
+    color: white;
+    margin-left: 16px;
+}
+
+.left
+{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
 /* Top Players Section */
 
 .players{
@@ -149,6 +185,34 @@ main{
 
 @media only screen and (max-width:688px) {
 
+    nav,.navigation{
+        width: 100vw;
+        display: block;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .left{
+        width: 100vw;
+        justify-content: center;
+    }
+
+    /* nav ul{
+        width: 100%;
+        padding: 0;
+        margin-right: 20px;
+    } */
+
+    nav ul{
+        width: 100vw;
+        display: block;
+        padding: 0;
+    }
+
+    nav ul li{
+        text-align: center;
+        margin-bottom: 10px;
+    }
     .container{
         width: 100%;
     }
